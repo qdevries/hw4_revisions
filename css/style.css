@@ -1,9 +1,8 @@
 body{
   background-color:rgb(178, 221, 247);
 }
-element.style {
-	min-height: 
-	87vh
+footer.style {
+	min-height:87vh
 	}
 
 /*---------nav------------*/
@@ -86,7 +85,7 @@ h2{font-family: 'Montserrat', sans-serif;
 	font-size: 2em;
 }
 
-p{font-family: 'Roboto', sans-serif;
+p{font-family: 'Montserrat', sans-serif;
 	font-size: 1em;
 	line-height: 200%;
 }
@@ -196,7 +195,9 @@ p{font-family: 'Roboto', sans-serif;
   body {
 		float: left;
     background-color: blue;
-    color: white;
+		color: white;
+		font-size: 80%;
+		font-family: 'Roboto Slab', serif;
   }
 }
 
@@ -205,9 +206,13 @@ p{font-family: 'Roboto', sans-serif;
   body {
 		float: left;
     background-color: rgb(50, 18, 167);
-    color: white;
+		color: white;
+		font-size: 60%;
+		font-family: 'Roboto Slab', serif;
 	}
 }
+
+/*------menu------*/
 
 @media screen and (max-width: 1200px) {
 	.menu { 
@@ -221,33 +226,12 @@ p{font-family: 'Roboto', sans-serif;
 	}
 }
 
-/*------menu------*/
-
 @media only screen and (max-width: 600px) {
-
-	/* ul {
-
-		position: absolute;
-	} */
 
 	#menu-icon {
 
 		display:inline-block;
 	}
-
-	/* nav ul, nav:active ul { 
-
-		display: none;
-		position: absolute;
-		padding: 20px;
-		background: #fff;
-		border: 5px solid #444;
-		right: 20px;
-		top: 60px;
-		width: 50%;
-		border-radius: 4px 0 4px 4px;
-
-	} */
 
 	nav li {
 		text-align: center;
@@ -261,7 +245,6 @@ p{font-family: 'Roboto', sans-serif;
 	}
 
 .flexcontainer{
-	flex-direction: row;
-}
-
+	flex-direction: column;
+	}
 }	
