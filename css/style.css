@@ -1,6 +1,10 @@
 body{
   background-color:rgb(178, 221, 247);
 }
+element.style {
+	min-height: 
+	87vh
+	}
 
 /*---------nav------------*/
 ul {
@@ -90,7 +94,7 @@ p{font-family: 'Roboto', sans-serif;
 /* ------flexbox ------ */
 .flexcontainer{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: flex-start;
@@ -188,7 +192,7 @@ p{font-family: 'Roboto', sans-serif;
 /* ------Media Queries ------ */
 
 /* On screens that are 992px wide or less, the background color is blue */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 900px) {
   body {
 		float: left;
     background-color: blue;
@@ -197,14 +201,15 @@ p{font-family: 'Roboto', sans-serif;
 }
 
 /* On screens that are 600px wide or less, the background color is purple */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   body {
 		float: left;
     background-color: rgb(50, 18, 167);
     color: white;
 	}
+}
 
-	@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
 	.menu { 
 			width: 100%;
 	}
@@ -218,21 +223,19 @@ p{font-family: 'Roboto', sans-serif;
 
 /*------menu------*/
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width: 600px) {
 
-	ul {
+	/* ul {
 
 		position: absolute;
-
-	}
+	} */
 
 	#menu-icon {
 
 		display:inline-block;
-
 	}
 
-	nav ul, nav:active ul { 
+	/* nav ul, nav:active ul { 
 
 		display: none;
 		position: absolute;
@@ -244,21 +247,21 @@ p{font-family: 'Roboto', sans-serif;
 		width: 50%;
 		border-radius: 4px 0 4px 4px;
 
-	}
+	} */
 
 	nav li {
-
 		text-align: center;
 		width: 100%;
 		padding: 10px 0;
 		margin: 0;
-
 	}
 
 	nav:hover ul {
-
 		display: block;
-
 	}
+
+.flexcontainer{
+	flex-direction: row;
 }
+
 }	
